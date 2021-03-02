@@ -1,0 +1,152 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "  User navigates to Facebook",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.quinbay.cucumber.steps.LoginSteps.goToFacebook(LoginSteps.java:24)\n\tat ✽.I am on Facebook login page(file:///Users/chaitrak/Downloads/CucumberDemo/src/test/resources/features/Login.feature:6)\n",
+              "duration": 3007000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I am on Facebook login page",
+            "match": {
+              "location": "com.quinbay.cucumber.steps.LoginSteps.goToFacebook()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-01T10:06:40.332Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1647000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.quinbay.cucumber.CucumberHooks.Launch_Browser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Verify login fails with incorrect credentials",
+        "description": "",
+        "id": "loginfeature;verify-login-fails-with-incorrect-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.quinbay.cucumber.CucumberHooks.Quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I enter username as \"TOM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TOM",
+                  "offset": 21
+                }
+              ],
+              "location": "com.quinbay.cucumber.steps.LoginSteps.enterUserName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter password as \"JERRY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JERRY",
+                  "offset": 21
+                }
+              ],
+              "location": "com.quinbay.cucumber.steps.LoginSteps.iEnterPasswordAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Login should fail",
+            "match": {
+              "location": "com.quinbay.cucumber.steps.LoginSteps.loginShouldFail()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "this is a test",
+            "match": {
+              "location": "com.quinbay.cucumber.steps.LoginSteps.m2()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Test1"
+          }
+        ]
+      }
+    ],
+    "name": "LoginFeature",
+    "description": "",
+    "id": "loginfeature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 15
+        }
+      }
+    ]
+  }
+]
